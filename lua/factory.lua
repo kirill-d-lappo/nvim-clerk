@@ -27,6 +27,7 @@ function factory.create_file_writer(file_path)
 		local fp = io.open(file_path, "a")
 		if fp then
 			fp:write(str)
+			fp:write("\n")
 			fp:close()
 		end
 	end
